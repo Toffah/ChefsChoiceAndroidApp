@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "614313292126",
+    "project_id": "chef-s-choice",
+    "storage_bucket": "chef-s-choice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614313292126:android:1b092e6d59cd27bb5d1fcf",
+        "android_client_info": {
+          "package_name": "com.example.cdc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614313292126-9i6sl86rnc98ud6a9big85tidn5kvbed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhbY-WiZD_azEaR9Ctcq8o043hC23r18Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614313292126-9i6sl86rnc98ud6a9big85tidn5kvbed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614313292126:android:0cacd9cc6d2fa3915d1fcf",
+        "android_client_info": {
+          "package_name": "com.example.chefschoice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614313292126-9i6sl86rnc98ud6a9big85tidn5kvbed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhbY-WiZD_azEaR9Ctcq8o043hC23r18Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614313292126-9i6sl86rnc98ud6a9big85tidn5kvbed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

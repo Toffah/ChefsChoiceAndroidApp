@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:id="@+id/toolbar">
+
+        <TextView
+                style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:text="Recipe Name"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSecondary"
+                android:layout_marginStart="30dp"
+                android:id="@+id/recipeName"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="60dp"
+            android:text="Recipe Name"
+            android:textSize="40dp"
+            android:id="@+id/recipeName2">
+    </TextView>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/recipeName2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:text="Ingredients"
+            android:textColor="@color/colorText"
+            android:textSize="20dp"
+            android:id="@+id/recipeIngredientsTitle">
+    </TextView>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/recipeIngredientsTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorText"
+            android:text="Ingredient 1"
+            android:textSize="15dp"
+            android:id="@+id/recipeIngredients">
+    </TextView>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/recipeIngredients"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:text="Instructions"
+            android:textSize="20dp"
+            android:id="@+id/recipeInstructionsTitle">
+    </TextView>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/recipeInstructionsTitle"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp" android:layout_marginLeft="10dp"
+            android:text="Step 1"
+            android:textSize="15dp"
+            android:id="@+id/recipeInstructions">
+    </TextView>
+
+</RelativeLayout>

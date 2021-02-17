@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:elevation="4dp"
+            android:id="@+id/toolbar">
+
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/appicon"
+                android:layout_marginStart="30dp"
+                android:onClick="superSecretEasterEggRecipes"
+                android:id="@+id/toolbarIcon">
+
+        </ImageView>
+
+        <TextView
+                style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:text="Chef's Choice"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSecondary"
+                android:layout_marginStart="5dp"
+                android:id="@+id/toolbarTitle"/>
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/loginicon"
+                    android:layout_marginEnd="20dp"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onLogInClicked"
+                    android:id="@+id/toolbarLogIn">
+
+            </ImageView>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/list_icon"
+                    android:layout_marginEnd="60dp"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onAllRecipesClicked"
+                    android:id="@+id/toolbarAllRecipes">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category1"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/category2">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:text="Add Recipes"
+                    android:textColor="@color/colorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/category1Texst"
+            />
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/category1Texst"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/addrecipe"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/picture1"
+                    android:onClick="onAddRecipePictureClicked"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:id="@+id/action1"
+                    android:layout_below="@+id/picture1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onAddRecipeClicked"
+
+            />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category2"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:text="View Recipes"
+                    android:textColor="@color/colorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/category2Texst"
+            />
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/category2Texst"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_logo"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onViewRecipePictureClicked"
+                    android:id="@+id/picture2"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:id="@+id/action2"
+                    android:layout_below="@+id/picture2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onViewRecipeClicked"
+
+            />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
