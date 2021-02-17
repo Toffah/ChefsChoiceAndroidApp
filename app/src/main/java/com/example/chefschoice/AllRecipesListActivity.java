@@ -55,6 +55,6 @@ public class AllRecipesListActivity extends AppCompatActivity {
 
         recipeList.setAdapter(recipeAdapter);
     }
-// hello
+
 }
 
