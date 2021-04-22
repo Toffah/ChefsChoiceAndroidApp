@@ -10,14 +10,12 @@ import com.example.chefschoice.database.FoodCategory;
 import com.example.chefschoice.database.Recipe;
 import com.example.chefschoice.database.RecipeRepository;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.function.Consumer;
 
 import static com.example.chefschoice.database.RecipeRepository.*;
-
 
 
 public class MainActivity extends AppCompatActivity {
@@ -48,9 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
-
     }
 
     public void onAddRecipeClicked(View view) {
@@ -88,6 +83,42 @@ public class MainActivity extends AppCompatActivity {
 
     public void onAllRecipesClicked(View view) {
         Intent intent = new Intent(this, AllRecipesListActivity.class);
+        startActivity(intent);
+    }
+
+    public void onViewDinnerRecipeClicked(View view){
+        Intent intent = new Intent(this, RecipesListActivity.class);
+        intent.putExtra(Tags.TAG_FOOD_CATEGORY, FoodCategory.DINNER.ordinal());
+        startActivity(intent);
+    }
+
+    public void onViewLunchRecipesClicked(View view) {
+        Intent intent = new Intent(this, RecipesListActivity.class);
+        intent.putExtra(Tags.TAG_FOOD_CATEGORY, FoodCategory.LUNCH.ordinal());
+        startActivity(intent);
+    }
+
+    public void onViewBreakfastRecipesClicked(View view) {
+        Intent intent = new Intent(this, RecipesListActivity.class);
+        intent.putExtra(Tags.TAG_FOOD_CATEGORY, FoodCategory.BREAKFAST.ordinal());
+        startActivity(intent);
+    }
+
+    public void onViewDessertRecipesClicked(View view) {
+        Intent intent = new Intent(this, RecipesListActivity.class);
+        intent.putExtra(Tags.TAG_FOOD_CATEGORY, FoodCategory.DESSERT.ordinal());
+        startActivity(intent);
+    }
+
+    public void onViewDrinkRecipesClicked(View view) {
+        Intent intent = new Intent(this, RecipesListActivity.class);
+        intent.putExtra(Tags.TAG_FOOD_CATEGORY, FoodCategory.DRINKS.ordinal());
+        startActivity(intent);
+    }
+
+    public void onViewSideDishRecipesClicked(View view) {
+        Intent intent = new Intent(this, RecipesListActivity.class);
+        intent.putExtra(Tags.TAG_FOOD_CATEGORY, FoodCategory.SIDEDISHES.ordinal());
         startActivity(intent);
     }
 }

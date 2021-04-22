@@ -30,6 +30,7 @@
 
         <activity
                 android:name=".ViewRecipeActivity"
+                android:windowSoftInputMode="adjustPan|adjustResize"
                 android:label="view recipe"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>

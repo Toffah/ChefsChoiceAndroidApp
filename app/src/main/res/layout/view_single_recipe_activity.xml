@@ -26,13 +26,22 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    <ScrollView android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_height="match_parent">
+
+<RelativeLayout android:layout_width="match_parent"
+                android:paddingBottom="60dp"
+                android:layout_height="match_parent">
+
+
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:textColor="@color/colorText"
-            android:layout_marginTop="60dp"
+
             android:text="Recipe Name"
             android:textSize="40dp"
             android:id="@+id/recipeName2">
@@ -95,5 +104,7 @@
             android:textSize="15dp"
             android:id="@+id/recipeInstructions">
     </TextView>
+</RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

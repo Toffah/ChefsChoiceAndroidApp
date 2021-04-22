@@ -59,12 +59,314 @@
 
             </ImageView>
 
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/addrecipe"
+                    android:layout_marginEnd="100dp"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onAddRecipeClicked"
+                    android:id="@+id/toolbarAddRecipe">
+
+            </ImageView>
+
         </RelativeLayout>
 
 
     </androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="20dp" android:layout_marginRight="20dp"
+            android:layout_marginStart="30dp" android:layout_marginLeft="30dp"
+            android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:text="Dinner"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/category1Texst"
+            />
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/category1Texst"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/viewdinnerrecipe"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/picture1"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:id="@+id/action1"
+                    android:layout_below="@+id/picture1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onViewDinnerRecipeClicked"
+
+            />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp" android:layout_marginRight="30dp"
+            android:layout_marginStart="20dp" android:layout_marginLeft="20dp"
+            android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:text="Lunch"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorText"
+                    android:id="@+id/category2Texst"
+            />
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/category2Texst"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/viewlunchrecipes"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/picture2"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:id="@+id/action2"
+                    android:layout_below="@+id/picture2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onViewLunchRecipesClicked"
+
+            />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="20dp" android:layout_marginRight="20dp"
+            android:layout_marginStart="30dp" android:layout_marginLeft="30dp"
+            android:layout_below="@+id/category1">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:text="Breakfast"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorText"
+                    android:id="@+id/category3Texst"
+            />
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/category3Texst"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/viewbreakfastrecipes"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/picture3"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:id="@+id/action3"
+                    android:layout_below="@+id/picture3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onViewBreakfastRecipesClicked"
+
+            />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category4"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp" android:layout_marginRight="30dp"
+            android:layout_marginStart="20dp" android:layout_marginLeft="20dp"
+            android:layout_below="@+id/category1">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:text="Desserts"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorText"
+                    android:id="@+id/category4Texst"
+            />
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/category4Texst"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/viewdessertrecipes"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/picture4"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:id="@+id/action4"
+                    android:layout_below="@+id/picture4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onViewDessertRecipesClicked"
+
+            />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category5"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="20dp" android:layout_marginRight="20dp"
+            android:layout_marginStart="30dp" android:layout_marginLeft="30dp"
+            android:layout_below="@+id/category3">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:text="Drinks"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorText"
+                    android:id="@+id/category5Texst"
+            />
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/category5Texst"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/viewdrinkrecipes"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/picture5"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:id="@+id/action5"
+                    android:layout_below="@+id/picture5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onViewDrinkRecipesClicked"
+
+            />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category6"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp" android:layout_marginRight="30dp"
+            android:layout_marginStart="20dp" android:layout_marginLeft="20dp"
+            android:layout_below="@+id/category4">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:text="Side Dishes"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorText"
+                    android:id="@+id/category6Texst"
+            />
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/category6Texst"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/viewsidedishrecipes"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/picture6"
+            />
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View"
+                    android:id="@+id/action6"
+                    android:layout_below="@+id/picture6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onViewSideDishRecipesClicked"
+
+            />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!--<com.google.android.material.card.MaterialCardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/category1"
@@ -154,6 +456,6 @@
             />
 
         </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.card.MaterialCardView>-->
 
 </RelativeLayout>
